@@ -1421,6 +1421,7 @@ int mmc_erase(struct mmc *mmc, int part, u32 start, u32 block)
 				} else {
 					block = (block / 1024) + 1;
 				}
+				block -= 1;
 			}
 		}
 	}
